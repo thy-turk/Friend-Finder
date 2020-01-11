@@ -1,5 +1,5 @@
 var surveyData = require("../data/friends");
-console.log(surveyData)
+var newFriend = require("../data/friends")
 
 module.exports = (app) => {
     app.get("/api/friends", (req, res) => {
@@ -7,8 +7,10 @@ module.exports = (app) => {
     });
 
 
-app.post("/api/reservations", function(req, res) {
-
-});
+    app.post("/api/friends", function (req, res) {
+        surveyData.push(newFriend);
+    });
 
 };
+
+console.log(newFriend);
