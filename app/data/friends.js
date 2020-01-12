@@ -25,9 +25,7 @@ let surveyData = [
         scores: [1,3,3,4,3,5,2,4,5,1]
     },
 
-
 ];
-
 
 module.exports = surveyData;
 

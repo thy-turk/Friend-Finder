@@ -17,7 +17,6 @@ $("#submit-btn").on("click", function (event) {
             $("#question10").val()
         ]
     };
-
     //If else statement that decides weather or not the form is filled comletely
     if (newFriend.name && newFriend.photo && newFriend.scores[0] && newFriend.scores[1] && newFriend.scores[2] && newFriend.scores[3] && newFriend.scores[4] && newFriend.scores[5] && newFriend.scores[6] && newFriend.scores[7] && newFriend.scores[8] && newFriend.scores[9]) {
         $.post("api/friends", newFriend, function (data, status) {

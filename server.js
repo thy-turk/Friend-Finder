@@ -1,4 +1,4 @@
-//Express/path boiler plate
+//Express and path boiler plate
 
 var express = require("express");
 var path = require("path");
