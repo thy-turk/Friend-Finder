@@ -11,7 +11,6 @@ let surveyData = [
     }
 ];
 
-var please = "TEST";
 
 module.exports = surveyData;
 
