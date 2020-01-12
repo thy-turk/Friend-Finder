@@ -15,174 +15,189 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Survey</title>
 </head>
 
 <body>
     <div class="container">
 
-        <form id="survey">
-            <div class="form-group">
-                <label for="name" id="surveyName">Please enter your name.</label>
-                <input type="text" class="form-control" id="name" required>
-                <label for="photo" id="surveyPhoto">Please enter a link to your photo</label>
-                <input type="text" class="form-control" id="photo" required>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question1">Question 1</label></h2>
-                <h4>You prefer to be outdoors.</h4>
-                <select class='form-control' id="question1">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question2">Question 2</label></h2>
-                <h4>You enjoy sports.</h4>
-                <select class='form-control' id="question2">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question3">Question 3</label></h2>
-                <h4>You workout regularly.</h4>
-                <select class='form-control' id="question3">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question4">Question 4</label></h2>
-                <h4>You like technology.</h4>
-                <select class='form-control' id="question4">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question5">Question 5</label></h2>
-                <h4>You play video games.</h4>
-                <select class='form-control' id="question5">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question6">Question 6</label></h2>
-                <h4>You watch a lot of TV.</h4>
-                <select class='form-control' id="question6">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question7">Question 7</label></h2>
-                <h4>You'd rather be at home than at a party.</h4>
-                <select class='form-control' id="question7">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question8">Question 8</label></h2>
-                <h4>You enjoy listening to music.</h4>
-                <select class='form-control' id="question8">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question9">Question 9</label></h2>
-                <h4>You like to read books.</h4>
-                <select class='form-control' id="question9">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <h2><label for="question10">Question 10</label></h2>
-                <h4>You are an organized person.</h4>
-                <select class='form-control' id="question10">
-                    <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
-                    <option value="1">1 (strongly agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (strongly-disagree)</option>
-                </select>
-            </div>
-        </form>
-        <button type="button" id='submit-btn' class="btn btn-lg btn-block btn-dark">Submit</button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="modalpopup" role="dialog">
-            <div class="modal-dialog modal-xl">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title"></h4>
-                        <button type="button" class="close closemodal" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div id="body" class="modal-body modal-lg">
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default closemodal" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="display-4" id="homeHeader">Friend Finder</h1>
+            <div class="col text-center">
+                <p class="lead">Answer the following questions to find a match!</p>
             </div>
         </div>
+
+    <form id="survey">
+        <div class="form-group">
+            <h4><label for="name" id="surveyName">Please enter your name.</label></h4>
+            <input type="text" class="form-control" id="name" required>
+            <h4><label for="photo" id="surveyPhoto">Please enter a link to your photo.</label></h4>
+            <input type="text" class="form-control" id="photo" required>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question1">Question 1</label></h2>
+            <h4>You prefer to be outdoors.</h4>
+            <select class='form-control' id="question1">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question2">Question 2</label></h2>
+            <h4>You enjoy sports.</h4>
+            <select class='form-control' id="question2">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question3">Question 3</label></h2>
+            <h4>You workout regularly.</h4>
+            <select class='form-control' id="question3">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question4">Question 4</label></h2>
+            <h4>You like technology.</h4>
+            <select class='form-control' id="question4">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question5">Question 5</label></h2>
+            <h4>You play video games.</h4>
+            <select class='form-control' id="question5">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question6">Question 6</label></h2>
+            <h4>You watch a lot of TV.</h4>
+            <select class='form-control' id="question6">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question7">Question 7</label></h2>
+            <h4>You'd rather be at home than at a party.</h4>
+            <select class='form-control' id="question7">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question8">Question 8</label></h2>
+            <h4>You enjoy listening to music.</h4>
+            <select class='form-control' id="question8">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question9">Question 9</label></h2>
+            <h4>You like to read books.</h4>
+            <select class='form-control' id="question9">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h2><label for="question10">Question 10</label></h2>
+            <h4>You are an organized person.</h4>
+            <select class='form-control' id="question10">
+                <option value="" disabled selected>Please choose how strongly you agree or disagree.</option>
+                <option value="1">1 (strongly agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly-disagree)</option>
+            </select>
+        </div>
+    </form>
+    <button type="button" id='submit-btn' class="btn btn-lg btn-block btn-dark">Submit</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalpopup" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close closemodal" data-dismiss="modal">&times;</button>
+                </div>
+                <div id="modalBody" class="modal-body modal-lg">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default closemodal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
     </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a href="/">Home</a></p>
+            
+        </div>
+    </footer>
 
 
     <script type="text/javascript" src="static/assets/javascript/app.js"></script>

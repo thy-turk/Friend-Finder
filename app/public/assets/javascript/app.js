@@ -1,5 +1,4 @@
-// var surveyData = require("../data/friends.js");
-
+// When the button is clicked the info is taken from the from and turned into an object
 $("#submit-btn").on("click", function (event) {
     event.preventDefault();
     var newFriend = {
@@ -19,22 +18,24 @@ $("#submit-btn").on("click", function (event) {
         ]
     };
 
+    //If else statement that decides weather or not the form is filled comletely
     if (newFriend.name && newFriend.photo && newFriend.scores[0] && newFriend.scores[1] && newFriend.scores[2] && newFriend.scores[3] && newFriend.scores[4] && newFriend.scores[5] && newFriend.scores[6] && newFriend.scores[7] && newFriend.scores[8] && newFriend.scores[9]) {
         $.post("api/friends", newFriend, function (data, status) {
+            //info is taken from the post request and is displayed in a modal
             console.log(data)
             $(".modal-title").text("You could be good friends with: ");
-            $("#body").text(data.name);
-            $("#body").append("<img class='matchimage' src='" + data.photo + "' alt='Photo'>");
+            $("#modalBody").text(data.name);
+            $("#modalBody").append("<img class='matchimage' src='" + data.photo + "' alt='Photo'>");
             $("#modalpopup").modal();
             document.getElementById("survey").reset();
         });
     }
     else {
         event.preventDefault();
-        event.stopPropagation();
 
+        //Modal appears if form is incomplete
         $("#modalpopup").modal();
-        $("#body").text("Please answer all the questions.");
+        $("#modalBody").text("Please answer all the questions.");
         $(".modal-title").text("Error")
     }
 
