@@ -8,7 +8,7 @@ This app uses both front end and back end technologies and combines them for a f
 
 
 ## Try the app here:
-https://thy-turk.github.io/unit-4-game/
+https://shrouded-savannah-50616.herokuapp.com/
 
 ![App Screenshot](app/public/assets/images/screenshot.png)
 
