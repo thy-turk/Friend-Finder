@@ -30,8 +30,6 @@ $("#submit-btn").on("click", function (event) {
         });
     }
     else {
-        event.preventDefault();
-
         //Modal appears if form is incomplete
         $("#modalpopup").modal();
         $("#modalBody").text("Please answer all the questions.");
